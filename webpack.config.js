@@ -42,6 +42,13 @@ module.exports = {
         ]
     },
 
+    resolve: {
+        extensions: ['.js', '.vue', '.json'],
+        alias: {
+          '@': path.resolve('src')
+        }
+    },
+
     plugins: [
         new VueLoader(),
         new HtmlWebpackPlugin({
