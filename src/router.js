@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import ChildrenComponent from './children-component'
+import VerticalAlign from './mod/vertical-align.vue'
 import Foo from './mod/foo'
 import About from './mod/about'
 
@@ -20,6 +21,10 @@ const routes = [
                 component: About
             }
         ]
+    },
+    {
+        path: '/vertical',
+        component: VerticalAlign
     }
 ]
 

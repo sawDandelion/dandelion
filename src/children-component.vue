@@ -12,11 +12,11 @@
 
             </div>
         </div> -->
-        <div>
+        <!-- <div>
             <span @click="toSkip('/foo')">to todo1</span>
             <span @click="toSkip('/about')">to todo2</span>
         </div>
-        <router-view />
+        <router-view /> -->
     </div>
 </template>
 

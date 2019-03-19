@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-    entry: path.resolve(__dirname, 'src/main.js'),
+    entry: ['babel-polyfill', path.resolve(__dirname, 'src/main.js')],
 
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -16,8 +16,13 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.js$/,
+                use: 'babel-loader',
+                exclude: /node_modules/
+            },
+            {
                 test: /\.vue$/,
-                loader: 'vue-loader'
+                use: 'vue-loader'
             },
             {
                 test: /\.css$/,
