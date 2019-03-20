@@ -31,7 +31,7 @@ export default {
 
     methods: {
         toSkip (path) {
-            this.$router.push(path);
+            this.$router.push(path)
         }
     }
 }

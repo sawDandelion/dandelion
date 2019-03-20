@@ -13,6 +13,9 @@ module.exports = {
 
     mode: 'development',
 
+    // 便于调试
+    devtool: 'cheap-module-eval-source-map',
+
     module: {
         rules: [
             {
@@ -48,7 +51,11 @@ module.exports = {
     },
 
     resolve: {
+
+        // 查询文件时，自动补充后缀
         extensions: ['.js', '.vue', '.json'],
+
+        // 替换src路径
         alias: {
           '@': path.resolve('src')
         }
