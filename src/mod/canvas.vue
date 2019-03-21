@@ -83,7 +83,7 @@ export default {
     }
 }
 
-.canvas{
+.canvas {
     transition: 1s;
     transform-origin: 250px 250px;
     animation: rotate 10s linear infinite;
@@ -96,5 +96,12 @@ export default {
     width: 100px;
     height: 100px;
     background: #abcdef;
+    border-radius: 50%;
+    transition: transform 1s ease, 1s ease-out;
+}
+
+.canvas-square:hover {
+    border-radius: 0;
+    transform: scale(1.5);
 }
 </style>
