@@ -4,6 +4,7 @@ import ChildrenComponent from './children-component'
 
 import VerticalAlign from './mod/vertical-align'
 import Canvas from './mod/canvas'
+import Vuex from './mod/vuex'
 
 import Foo from './mod/foo'
 import About from './mod/about'
@@ -32,6 +33,10 @@ const routes = [
     {
         path: '/canvas',
         component: Canvas
+    },
+    {
+        path: '/vuex',
+        component: Vuex
     }
 ]
 
